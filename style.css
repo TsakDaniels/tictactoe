@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(34, 31, 35);
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color:rgb(248, 128, 148);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  
+}
+
+.board {
+  width: 99vw;
+  height: 75vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 150px);
+}
+
+.board .cell {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.281);
+  border: 1px solid rgb(34, 31, 35);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  box-shadow: 0px 2px 10px 2px;
+  border: 2px solid rgb(255, 60, 92);
+  color: rgb(255, 60, 92);
+  background-color: rgba(0, 0, 0, 0.341);
+}
+
+button {
+  background: none;
+  border: 2px solid rgb(248, 128, 148);
+  font: inherit;
+  line-height: 1;
+  margin: 1.5em;
+  padding: 1em 3em;
+  color: palevioletred;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.341);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
